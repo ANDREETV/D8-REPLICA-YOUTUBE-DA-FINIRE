@@ -1,0 +1,377 @@
+
+/****** FONT ******/
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700;900&display=swap');
+
+/****** GLOBALE ******/
+
+
+
+/****** rgb(39, 39, 39) ******/
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+
+/****** HEADER ******/
+
+
+
+
+header{
+    width: 100%;
+    height: 56px;
+    background-color: rgb(15, 15, 15);
+    color: #F1F1F1;
+    display: flex;
+    padding: 0 17px;
+    justify-content: space-between;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+main{
+    height: calc(100vh - 56px);
+    position: fixed;
+    top: 56px;
+    left: 0;
+    display: flex;
+}
+
+/****** HEADER SX ******/
+
+.header-sx{
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.header-sx img{
+    width: 120px;
+    padding: 18px 14px 18px 16px;
+}
+
+.header-sx i{
+    font-size: 24px;
+    padding: 8px;
+}
+
+.header-sx i:hover{
+    width: 40px;
+    height: 40px;
+    padding: 8px;
+    border-radius: 50%;
+    background-color: rgb(39, 39, 39);
+}
+
+/****** HEADER CENTER ******/
+
+.header-center{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-center input{
+    width: 540px;
+    height: 40px;
+    font-size: 16px;
+    border-radius: 50px 0 0 50px;
+    padding: 0px 4px 0px 16px;
+    background-color: rgb(18, 18, 18);
+    border: 1px solid rgb(34, 34, 34);
+}
+
+.header-center i:first-of-type{
+    background-color: rgb(34, 34, 34);
+    border-radius: 0 40px 40px 0;
+    font-size: 24px;
+    width: 64px;
+    height: 40px;
+    line-height: 40px; 
+    pad: 1px 6px;
+    text-align: center;
+}
+
+.header-center i:last-of-type{
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    line-height: 40px;
+    margin-left: 10px;
+    text-align: center;
+}
+
+/****** HEADER DX ******/
+
+.header-dx{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 156px;
+    height: 40px;
+}
+
+.header-dx-profile {
+    width: 32px;
+    height: 32px;
+    position: relative;
+    overflow: hidden;
+}
+.header-dx-profile img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.header-dx i{
+    font-size: 24px;
+    padding: 8px;
+}
+
+.header-dx i:hover{
+    background-color: rgb(34, 34, 34);
+    border-radius: 50%;
+}
+
+/****** MAIN NAV SX ******/
+
+
+
+.main-nav-sx{
+    background-color: rgb(15, 15, 15);
+    width: 240px;
+    padding: 12px;
+    height: 100%;
+    overflow: hidden;
+    flex: 1;
+    flex-basis: 1e-9px;
+}
+
+.main-nav-sx:hover{
+    overflow-y: scroll;
+    width: 240px;
+    padding: 12px;
+}
+
+
+::-webkit-scrollbar{
+    width: 10px;
+}
+
+::-webkit-scrollbar-track{
+    background: none;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: transparent;
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb{
+    background-color: #888;
+}
+
+
+
+
+
+.main-container{
+    width: calc(100vw - 240px);
+    background-color: rgb(15, 15, 15);
+}
+
+.main-dx-video{
+    height: calc(100vh - 112px);
+    background-color:rgb(15, 15, 15);
+}
+
+
+.main-nav-item-container{
+    width: 204px;
+    height: 40px;
+    padding: 0 10px;
+    font-weight: 500;
+    line-height: 24px;
+    display: flex;
+    align-items: center;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.main-nav-item {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: #F1F1F1;
+    font-family: "Roboto","Arial",sans-serif;
+    font-weight: 400;
+}
+
+#testo_a_capo {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.ri-home-fill, 
+.ri-surround-sound-line, 
+.ri-folder-add-line,
+.ri-file-add-line,
+.ri-movie-line,
+.ri-history-line,
+.ri-time-line,
+.ri-thumb-up-line,
+.ri-add-circle-line,
+.icone-fuoco,
+.ri-music-line,
+.ri-film-line,
+.icona-vivo,
+.ri-gamepad-line,
+.ri-file-list-3-line,
+.ri-trophy-line,
+.icona-moda,
+.ri-settings-3-line,
+.ri-flag-line,
+.ri-feedback-line,
+.ri-question-line{
+    margin-right: 24px;
+    font-size: 24px;
+}
+
+
+
+.main-nav-item-container:hover{
+    width: 204px;
+    height: 40px;
+    background-color: rgb(34, 34, 34);
+    border-radius: 10px;
+}
+
+.main-nav-sx_top{
+    border-bottom: 1px solid rgba(34, 34, 34, .9);
+    padding-bottom: 12px;
+    margin-bottom: 12px;
+}
+
+.main-nav-sx_top h1{
+    font-size: 1.1rem;
+    color: #F1F1F1;
+    padding: 6px 12px 4px;
+    line-height: 2.2rem;
+    font-weight: 400;
+}
+
+.main-nav-logo_iscrizione{
+    position: relative;
+    width: 24px;
+    height: 24px;
+    overflow: hidden;
+    
+}
+
+.main-nav-logo_iscrizione img{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    border-radius: 50%;
+}
+
+.main-nav-item-container p{
+    color: white;
+    font-size: 14px;
+    margin-left: 25px;
+}
+
+.main-nav-sx_bottom_top{
+    color: white;
+    padding: 16px 24px 0;
+    font-size: 10px;
+
+}
+
+.main-nav-sx_bottom_top a{
+    font-size: 13px;
+    text-decoration: none;
+    color: #AAAAAA;
+    margin-right: 8px;
+}
+.main-nav-sx_bottom_top a:last-of-type{
+    margin-right: 0px;
+}
+
+.main-nav-sx_bottom{
+    padding: 16px 24px;
+}
+.main-nav-sx_bottom p{
+    color: #717171;
+    font-size: 12px;
+}
+
+
+
+/****** MAIN NAV TOP ******/
+
+.main-nav-top{
+    height: 56px;
+    width: 100%;
+    display: flex;
+    position: fixed;
+    top:56px;
+    left: 240;
+    align-items: center;
+}
+
+.link-categorie{
+    width: fit-content;
+    background-color: rgb(39, 39, 39);
+    padding: 10px 12px;
+    margin-right: 12px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.link-categorie a{
+    text-decoration: none;
+    color: white;
+}
+
+.main-nav-top .link-categorie:first-of-type{
+    margin-left: 35px;
+}
+
+.main-dx-video{
+    background-color: aqua;
+    height: calc(100vh - 56px +56px);
+    top: 56px;
+    position: relative;
+    padding-top: 24px;
+}
+
+.video-container{
+    width: 362px;
+}
+.video-top{
+    width: 360px;
+    height: 202px;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-top img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-fit: cover;
+    border-radius: 10px;
+}
